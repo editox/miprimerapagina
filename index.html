@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <script src="https://kit.fontawesome.com/39c30c9dc5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="index.html"><i class="fa-solid fa-heart"></i></a>
+            <nav class="header-nav">
+                <ul class="header-nav-ul">
+                    <li>Inicio</li>
+                    <li>Acerca de mi</li>
+                    <li>Trabajos</li>
+                    <li>Servicios</li>
+                    <li>Contacto</li>
+                </ul>
+            </nav>
+        </header>
+        <main class="seccion-principal">
+            <section class="container-seccion-1">
+                <div class="seccion-1">
+                    <div class="acerca-de">
+                        <h2>Acerca de mi</h2>
+                        <p class="parrafo1">¡Bienvenido a mi página! Aquí, algunos datos sobre mí.</p>
+                        <p class="parrafo2">Estudiante del ultimo ciclo de la carrera de
+                            Arquitectura de Interiores, del Instituto Toulouse
+                            Lautrec.
+                            Gracias a los conocimientos adquiridos durante
+                            mis años de preparación, estoy capacitada para
+                            realizar diseños en 2D y 3D ya sea para
+                            remodelación de viviendas, departamentos,
+                            centros de oficinas y diseños de mobiliario.</p>
+                    </div>
+                    <div class="acerca-imagen">
+                        <img src="img/image-perfil.jpg" alt="imagen personal">
+                    </div>
+                </div>
+                
+            </section>
+            <section class="seccion-2">
+                <img src="img/carrusel-img.jpg" alt="imagen de carrusel">
+            </section>
+            <section class="seccion-3">
+                <h3 class="articles-title">Trabajos</h3>
+                <div class="articles">
+                    <article class="article">
+                        <img src="img/img-trabajo-1.jpg" alt="">
+                        <h4 class="article-title">Dormitorio Matrimonial</h4>
+                        <p>Dormitorio implementado para una casa en la Lima - Molina. Se propuso un diseno moderno con coleres con un tono pastel. Es una habitacion matrimonial que cuenta con una ventana, muebles y demas comodidades. </p>
+                    </article>
+                    <article class="article">
+                        <img src="img/img-trabajo-2.jpg" alt="">
+                        <h4 class="article-title">Comedor</h4>
+                        <p>Dormitorio implementando para una casa en la Molina. Se propuso un diseno moderno con coleres con un tono pastel. Es una habitacion matrimonial que cuenta con una ventana, muebles y demas comodidades. </p>
+                    </article>
+                    <article class="article">
+                        <img src="img/img-trabajo-3.jpg" alt="">
+                        <h4 class="article-title">Sala de Presentación</h4>
+                        <p>Dormitorio implementando para una casa en la Molina. Se propuso un diseno moderno con coleres con un tono pastel. Es una habitacion matrimonial que cuenta con una ventana, muebles y demas comodidades. </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="contacto">
+                <div class="form-header">
+                    <h1>Contacto</h1>
+                    <p><em>Esperamos tu consulta!</em></p>
+                </div>
+                <form action="" class="formulario" id="form">
+                    <div class="form-container">
+                        <div class="form-row">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="celular">Celular</label>
+                            <input type="tel" id="celular">
+                        </div>
+                        <div class="form-row">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <label for="submit"></label>
+                            <button type="submit" id="submit">Enviar</button>
+                        </div>
+                        <p class="alerta" id="alerta"></p>
+                    </div>
+                </form>
+            </section>
+
+            <section class="redes-sociales">
+                <a href="https:egg.live"><i class="fa-solid fa-heart"></i></a>
+                <h3>Redes Sociales</h3>
+                <nav>
+                    <ul>
+                        <li><a href="https://www.instagram.com/kharii_06/">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@khari_06">TikTok</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61550835507097">Facebook</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <div id="footer">
+                
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

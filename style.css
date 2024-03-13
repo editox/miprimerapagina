@@ -1,0 +1,275 @@
+/* ------------- CSS General ------------- */
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    /*background-color: #222;*/
+    /*color: white;*/
+    font-family: "Roboto", sans-serif;
+    /* margin: 0 10vw; */
+
+}
+
+ul, li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(34,33,31,0.85);
+}
+
+
+header a i {
+    color: white;
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+.header-nav{
+    padding-right: 2em;
+}
+.header-nav-ul{
+    display: flex;
+    gap: 1.1em;
+    color:#eeeeee;
+}
+.container-seccion-1{
+    background-color: #eeeeee;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+.seccion-1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 610px;
+    padding: 2em;
+}
+
+.acerca-de {
+    text-align: right;
+    padding: 0.7em;
+    width: 70%;
+}
+
+.acerca-imagen {
+    width: 30%;
+
+}
+
+.acerca-imagen img {
+    width: 100%;
+    border-radius: 2em;
+}
+
+.seccion-2 img {
+    width: 100%;
+}
+
+.seccion-3 {
+    padding: 2em;
+    background-color: #d6d9dc;
+}
+.articles-title{
+    color:#b59a61;
+    margin-bottom: 1em;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.article {
+    width: 30%;
+}
+
+.article img {
+    width: 100%;
+    border-radius: 1em;;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.contacto {
+    /* width: 80%; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #5d6063;
+}
+.form-header {
+    text-align: center;
+}
+.form-header h1{
+    color:#b59a61;
+    padding-bottom: 1em;
+}
+.form-header em{
+    font-weight: bold;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 80%;
+    padding: 40px 0;
+}
+
+.form-container {
+    width: 500px;
+    padding: 0 30px;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    /* margin-bottom: 40px; */
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+  }
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"] {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 80%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+    width: 20%;
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+  
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+    width: 80%;
+  }
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #b59a61;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  .form-row button:hover {
+    background-color: #cdb581;
+  }
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+  .alertas {
+      color: rgb(191, 18, 18);
+      font-weight: bolder;
+  
+  }
+
+
+.redes-sociales {
+    padding: 2em;
+    margin-top: 2em;
+    background-color: rgba(34, 33, 31, 0.932);
+    text-align: center;
+}
+
+.redes-sociales h3 {
+    color: #b59a61;
+}
+.redes-sociales nav ul{
+    padding: 0.5em;
+}
+.redes-sociales nav ul li a {
+    color: #eeeeee;
+    display: block;
+    padding: 0.3em 0;
+    
+}
+
+.redes-sociales  a i {
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+    color: yellow;
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas (móviles) */
+    .seccion-1 {
+        flex-direction: column;
+        align-content:flex-end;
+    }
+    .acerca-de {
+        width: 60%;
+        text-align: center;
+    }
+    .acerca-imagen {
+        width: 50%;
+    }
+    
+    .articles-title {
+        text-align:center;
+    }
+
+    .articles{
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .article {
+        width: 70%;
+        padding-bottom: 2em;
+    }
+
+ 
+    /* ------------- Campos del Formulario ------------- */
+
+    .form-row {
+        flex-direction: column;
+        padding-left: 10%;
+    }
+    .form-row button {
+        width: 80%;
+
+    }
+
+
+}
